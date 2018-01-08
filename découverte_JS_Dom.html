@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+	</head>
+<body>
+	<table border="1">
+		<caption>Exercice Dom</caption>
+		<tr>
+			<th>Titre1</th>
+			<th>Titre2</th>
+			<th>Titre3</th>
+		</tr>
+		<tr>
+			 <td><p id="test">Element1</p></td>
+			 <td>Element2</td>
+			 <td>Element3</td>
+		</tr>
+		<tr>
+			 <td>Element4</td>
+			 <td>Element5</td>
+			 <td>Element6</td>
+		</tr>
+	</table>
+
+<script>
+  var a = document.getElementById("test");
+	a.innerHTML = "Bonjour";
+	a.style.color = "green";
+	// a.setAttribute("style", "color: red;");
+</script>
+
+</body>
+</html>
