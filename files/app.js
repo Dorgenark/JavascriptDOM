@@ -20,14 +20,15 @@ document.querySelector("ul").innerHTML += "<li>Mon meilleur ami est <a href='htt
 document.getElementsByTagName("a")[1].setAttribute("style", "text-decoration: none; color: brown;");
 
 // Exercice 4 partie 2
-var liste, tableau;
-liste = document.querySelector("ol");
-tableau = ["Silent Teacher","Code Monkey", "CodeCombat"];
-// a = document.querySelector("ol").children.length;
-// while (a > 0)
-
+var liste = document.querySelector("ol");
 while (liste.firstChild) {
   liste.removeChild(liste.firstChild);
 };
 
-// Rest à créer un loop pour aligner les éléments de "tableau" dans la list ol
+var tableau = ["Silent Teacher","Code Monkey","CodeCombat"];
+for (var i = 0; i < tableau.length; i++) {
+  var node = document.createElement("li");
+  var textnode = document.createTextNode(tableau[i]);
+  node.appendChild(textnode);
+  liste.appendChild(node);
+}
